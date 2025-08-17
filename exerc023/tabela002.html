@@ -21,23 +21,29 @@
             background-color: darkgray;
             color: white;
         }
+       
         thead, tfoot {
             background-color: darkgray;
             color: white;
         }
+  
         td.num {
             text-align: right;
+        }
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
         }
     </style>
 </head>
 <body>
     <h1>Minha primeira tabela</h1>
     <table>
+        <caption>População das unidades federativas</caption>
  <thead>
 <tbody>
 <tr>
-    <th>Estado</th>
-    <th>população</th>
+    <th scope="col">Estado</th>
+    <th scope="col" widht "50px">população</th>
 </tr>
 
 <tr>
@@ -130,7 +136,7 @@
 </tr>
 <tfoot>
      <tr>
-    <th>Total de habitantes</th>
+    <th scope="row">Total de habitantes</th>
    
         <td class="num"><strong>212 583 750</strong></td>
    
