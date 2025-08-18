@@ -11,11 +11,18 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         td,th {
             border: 1px solid black;
             padding: 10px;
          
+        }
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgrey;
         }
         thead,th{
             background-color: darkgray;
@@ -23,7 +30,7 @@
         }
        
         thead, tfoot {
-            background-color: darkgray;
+            background-color: #383838;
             color: white;
         }
   
@@ -34,6 +41,12 @@
             background-color: lightgray;
 
         }
+        tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+
+        }
 
 
     </style>
@@ -41,6 +54,7 @@
 <body>
     <h1>Minha primeira tabela</h1>
     <table>
+        
         <caption>População das unidades federativas</caption>
  <thead>
 <tbody>
@@ -48,7 +62,7 @@
     <th scope="col">Estado</th>
     <th scope="col" widht "50px">população</th>
 </tr>
-
+</thead>
 <tr>
     <td>São paulo</td>
     <td class="num">45 973 194</td>
