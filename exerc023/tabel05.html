@@ -20,11 +20,26 @@
         th, td {
             border: 1px solid black;
         }
+        col.cnome {
+            background-color: aqua;
+        }
+        col.cgrupo {
+            background-color: brown;
+        }
+        col.cprof {
+            background-color: gold;
+        }
     </style>
 </head>
 <body>
     <h1>Exercício de tabela</h1>
     <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="cgrupo" span="2">
+            
+            <col class="cprof">
+        </colgroup>
         <caption>Cadastro</caption>
         <tr>
             <th scope="col">nome</th>
@@ -37,6 +52,30 @@
             <td>f</td>
             <td>25</td>
             <td>jornalismo</td>
+        </tr>
+        <tr>
+            <td>Cláudio</td>
+             <td>m</td>
+              <td>42</td>
+               <td>professor</td>
+        </tr>
+        <tr>
+            <td>Hélio</td>
+            <td>m</td>
+            <td>19</td>
+            <td>Vendedor</td>
+        </tr>
+        <tr>
+            <td>Maria</td>
+             <td>f</td>
+              <td>39</td>
+               <td>Médica</td>
+        </tr>
+        <tr>
+            <td>Otávio</td>
+            <td>m</td>
+            <td>22</td>
+            <td>Nutricionista</td>
         </tr>
     </table>
 </body>
