@@ -2,6 +2,8 @@
 /* todas as demais mídias*/
 /* Typical Device Breakpoints
 pequenas telas:até 600px
+celular:de 600px a 768px 
+tablet:768px a 992px
 laptop: 992px a 1200px:
 desktop:de 1200px a 1800px
 tv: 1200px a 1800px
@@ -14,7 +16,7 @@ telas grandes: a partir de 1800px
 }
 @media  screen and (min-width:768px) and(max-width:992px){/*tablet*/
   body {
-   background-image:url(../imagens/back-tablet.jpg);
+   background-image:url(../back-tablet.jpg);
    background-size: cover;
     
   }  
