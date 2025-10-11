@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+
+/*telas até 600px vai mostrar o hamburguinho passou disso não vai, vaimostrar vai usar a configuração geral*/
+
+/*telas a partir de 768px*/
+@media screen and (min-width:768px) {
+    #burguer{
+        display: none;
+    }
+    menu {
+        display: block;
+        
+    }
+    menu > ul >li {
+        display:inline-block;
+        
+        margin: 10px;
+        width: 100px;
+    }
+    main {
+        width: 768px;
+    }
+    
+}
