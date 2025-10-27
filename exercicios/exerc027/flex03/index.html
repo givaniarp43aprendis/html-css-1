@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.conteiner {
+            background-color: burlywood;
+            display: flex;
+        }
+        div.item {
+            text-align: center;
+            background-color: lightblue;
+            border: 1px solid black;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 3px 5px;
+            flex: auto;/* Cada item ocupará o mesmo espaço disponível  o iten ficara flexivel*/
+        }
+        div.conteinerr {
+            background-color: lightgrey;
+            display: flex;
+        }
+        div.itens {
+            text-align: center;
+            background-color: lightcoral;
+            border: 1px solid black;
+            padding: 10px;
+            margin: 5px;
+            flex: 2; /* Cada item ocupará o dobro do espaço disponível */
+            flex-grow: 1; /* Permite que os itens cresçam igualmente */
+            flex-basis: 100px; /* Tamanho base de cada item */
+            flex-shrink: 1; /* Permite que os itens encolham se necessário */
+
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        
+        <div class="item">A</div> 
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div><br><br>
+    <div class="conteinerr">
+        <div class="itens">casa</div>
+        <div class="itens">casa</div>
+        <div class="itens">casa</div>
+    </div>
+</body>
+</html>
