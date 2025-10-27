@@ -8,13 +8,19 @@
         div.conteiner {
             background-color: burlywood;
             display: flex;
+            flex-flow: row rap;
+            /*flex-direction: column;
+            flex-wrap: wrap;  /* Permite que os itens quebrem linha se necessário*/
+           /* flex-direction: row;*/
+           /* flex-wrap: wrap; Permite que os itens quebrem linha se necessário*/
+            /*flex-wrap: wrap-reverse;
+             Os itens quebram linha de baixo para cima */
         }
         div.item {
             text-align: center;
             background-color: lightblue;
             border: 1px solid black;
-            padding: 10px;
-            margin: 5px;
+            
             border-radius: 3px 5px;
             flex: auto;/* Cada item ocupará o mesmo espaço disponível  o iten ficara flexivel*/
         }
@@ -39,13 +45,13 @@
 <body>
     <div class="conteiner">
         
-        <div class="item">A</div> 
-        <div class="item">B</div>
-        <div class="item">C</div>
-        <div class="item">D</div>
-        <div class="item">E</div>
-        <div class="item">F</div>
-        <div class="item">G</div>
+        <div class="item">Exemplo de blocoA</div> 
+        <div class="item">Exemplo de blocoB</div>
+        <div class="item">Exemplo de blocoC</div>
+        <div class="item">Exemplo de blocoD</div>
+        <div class="item">Exemplo de blocoE</div>
+        <div class="item">Exemplo de blocoF</div>
+        <div class="item">Exemplo de blocoG</div>
     </div><br><br>
     <div class="conteinerr">
         <div class="itens">casa</div>
