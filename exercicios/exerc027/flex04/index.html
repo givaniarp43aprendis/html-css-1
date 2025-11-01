@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.conteiner {
+            background-color: burlywood;
+            height: 300px;
+            display: flex;
+            flex-flow: row nowrap; /* Define a direção dos itens em linha e sem quebra */
+            justify-content:space-evenly; /* Alinha os itens no início do contêiner */
+            align-items: stretch; /* Centraliza os itens verticalmente */
+           
+        }
+        div.item {
+            text-align: center;
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+        }
+        div.conteinerr {
+            background-color: lightgrey;
+            display: flex;
+            
+            flex-flow: row nowrap; /* Define a direção dos itens em linha e sem quebra */
+            justify-content: space-evenly; /* Distribui os itens com espaço igual entre eles */
+            align-items: center; /* Centraliza os itens verticalmente */
+        }
+        div.itens {
+            flex-direction: column;
+            text-align: center;
+            background-color: lightcoral;
+            border: 1px solid black;
+            margin: 10px;
+            padding: 5px
+            ;
+            flex: 2; /* Cada item ocupará o dobro do espaço disponível */
+            
+
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        
+        <div class="item">A</div> 
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div><br><br>
+    <div class="conteinerr">
+        <div class="itens">casa</div>
+        <div class="itens">casa</div>
+        <div class="itens">casa</div>
+    </div>
+</body>
+</html>
