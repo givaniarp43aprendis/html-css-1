@@ -8,6 +8,7 @@
         div.conteiner {
             background-color: burlywood;
             display: flex;
+            flex-flow: row wrap;
         }
         div.item {
             text-align: center;
@@ -16,7 +17,9 @@
             padding: 10px;
             margin: 5px;
             border-radius: 3px 5px;
-            flex: auto;/* Cada item ocupará o mesmo espaço disponível  o iten ficara flexivel*/
+            display: flex;
+            text-align: center;
+            flex-basis: 200px;
         }
         div.conteinerr {
             background-color: lightgrey;
@@ -40,11 +43,11 @@
     <div class="conteiner">
         
         <div class="item">A</div> 
-        <div class="item">B</div>
+        <div class="item">outro conteúdo</div>
         <div class="item">C</div>
-        <div class="item">D</div>
+        <div class="item">conteúdo um pouco maior</div>
         <div class="item">E</div>
-        <div class="item">F</div>
+        <div class="item">conteúdo maior ainda,que vai ocupar mais espaço</div>
         <div class="item">G</div>
     </div><br><br>
     <div class="conteinerr">
