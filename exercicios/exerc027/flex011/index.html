@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.conteiner {
+            background-color: burlywood;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+        div.item {
+            text-align: center;
+            background-color: lightblue;
+            border: 1px solid black;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 3px 5px;
+            flex-basis: 250px;
+            flex-shrink: 1;
+            flex-grow: 1;
+            
+        }
+        div.conteinerr {
+            background-color: lightgrey;
+            display: flex;
+            
+        }
+        div.itens {
+            text-align: center;
+            background-color: lightcoral;
+            border: 1px solid black;
+            padding: 10px;
+            margin: 5px;
+            flex: 2; /* Cada item ocupará o dobro do espaço disponível */
+            flex-grow: 1; /* Permite que os itens cresçam igualmente */
+            flex-basis: 100px; /* Tamanho base de cada item */
+            flex-shrink: 1; /* Permite que os itens encolham se necessário */
+
+        }
+        
+        
+        
+            
+        
+
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        
+        <div class="item">A</div> 
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        
+    </div><br><br>
+    <div class="conteinerr">
+        <div class="itens">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id natus ut omnis dolor. At saepe cum modi repellat ex. Tempore quas a earum sint necessitatibus et officiis quam enim qui.</div>
+        <div class="itens">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas animi, cumque ab veniam eius mollitia fuga vel adipisci provident voluptatibus! Dolore dolorum voluptates, magni culpa beatae ipsum accusantium pariatur sed?</div>
+        <div class="itens">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga distinctio, dicta eius mollitia ea officiis neque saepe rerum illum suscipit quasi rem delectus maxime eos dolorem tempora enim, deserunt aperiam.</div>
+    </div>
+    
+    
+</body>
+</html>
