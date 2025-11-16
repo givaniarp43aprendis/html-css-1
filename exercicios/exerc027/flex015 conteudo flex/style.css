@@ -10,9 +10,14 @@ body {
     font-size: 1.5em;
    line-height: 1.5em;
 }
-p,h1,h2 {
+p {
     margin-bottom: 15px;
     text-align: justify;
+}
+h1,h2 {
+    margin-bottom: 15px;
+    text-align: left;
+    line-height: 1.2em;
 }
 header,section.normal-content {
     background-color: rgb(100, 100, 100);
@@ -23,4 +28,52 @@ header,section.normal-content {
 section.flex-content {
     background-color: rgb(187, 177, 177);
     padding: 20px;
+}
+section > article {
+    background-color: rgb(150, 150, 150);
+    margin: 10px;
+    padding: 15px;
+   
+}
+article.text-media {
+    display: flex;
+    gap: 15px;/* espaço entre os elementos flexíveis */
+    flex-flow: row wrap;/* permite que os elementos flexíveis quebrem de linha */
+    justify-content: space-between;
+}
+article.media-text {
+    display: flex;
+    gap: 15px;/* espaço entre os elementos flexíveis */
+    flex-flow: row wrap;/* permite que os elementos flexíveis quebrem de linha */
+    flex-direction: row-reverse; /* inverte a ordem dos elementos flexíveis */
+    justify-content: space-between; /* distribui os elementos flexíveis com espaço entre eles */
+}
+article > div.text {
+    flex: 1 1 300px; /* cresce, encolhe, tamanho base */
+  
+   margin: 5px;
+   padding: 5px;
+}
+article > div.media {
+    flex: 0 1 300px; /* não cresce, encolhe, tamanho base */
+   margin: 5px;
+   padding: 5px;}
+article > div.media img {
+    max-width: 100%;/* limita a largura máxima da imagem ao tamanho do contêiner */
+    height: auto;/* mantém a proporção da imagem */
+    display: block;
+    margin: auto;
+}
+article > div.media video {
+    max-width: 80%;
+   
+    display: block;
+    margin: auto;
+}
+article > div.text {
+    text-align: justify;
+    flex: 1 1 300px;
+}
+article > div.media {
+    flex: 0 1 300px;
 }
